@@ -5,16 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_tong_quan"
+            android:icon="@drawable/ic_tong_quan"
+            android:title="Tổng quan" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_hang_hoa"
+            android:icon="@drawable/ic_hang_hoa"
+            android:title="Hàng hóa" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_kiem_kho"
+            android:icon="@drawable/ic_kiem_kho"
+            android:title="Kiểm kho" />
     </group>
+
 </menu>

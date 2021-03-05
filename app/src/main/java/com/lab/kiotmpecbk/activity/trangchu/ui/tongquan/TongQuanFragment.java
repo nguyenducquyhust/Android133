@@ -1,4 +1,4 @@
-package com.lab.kiotmpecbk.activity.trangchu.ui.home;
+package com.lab.kiotmpecbk.activity.trangchu.ui.tongquan;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,20 +13,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.lab.kiotmpecbk.R;
+import com.lab.kiotmpecbk.activity.trangchu.ui.gallery.GalleryViewModel;
 
-public class HomeFragment extends Fragment {
+public class TongQuanFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private TongQuanViewModel tongQuanViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-
-        final TextView textView = root.findViewById(R.id.text_home);
-
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        tongQuanViewModel =
+                ViewModelProviders.of(this).get(TongQuanViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_tongquan, container, false);
+        final TextView textView = root.findViewById(R.id.text_tongquan);
+        tongQuanViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

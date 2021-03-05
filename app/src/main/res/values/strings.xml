@@ -22,4 +22,12 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Danh_sach_san_pham">Danh sach san pham</string>
+    <string name="Gio_hang">Gio Hang</string>
+    <string name="Thanh_toan">Thanh toan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
