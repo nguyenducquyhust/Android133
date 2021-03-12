@@ -14,7 +14,7 @@ public interface HanghoaService {
             .create();
 
     LoginApiService apiService = new Retrofit.Builder()
-            .baseUrl("http://lab.kiotmpecbk.cloud:8080/")
+            .baseUrl("http://www.kiotmpecbk.xyz/")
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(LoginApiService.class);
 

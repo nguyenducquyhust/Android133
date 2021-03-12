@@ -20,8 +20,9 @@
         tools:layout="@layout/fragment_hanghoa" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.lab.kiotmpecbk.activity.trangchu.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_kiem_kho"
+        android:name="com.lab.kiotmpecbk.activity.trangchu.ui.kiemkho.KiemKhoFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_kiem_kho" />
+
 </navigation>

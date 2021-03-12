@@ -9,8 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.lab.kiotmpecbk.MainActivity;
 import com.lab.kiotmpecbk.R;
 import com.lab.kiotmpecbk.activity.trangchu.TrangChuActivity;
+import com.lab.kiotmpecbk.activity.trangchu.ui.hanghoa.banhang.HangHoaActivity;
 import com.lab.kiotmpecbk.api.login.LoginApiService;
 import com.lab.kiotmpecbk.entities.login.UserLoginRequest;
 import com.lab.kiotmpecbk.entities.login.UserLoginResponse;
@@ -57,10 +59,10 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this,"login thanh cong",Toast.LENGTH_SHORT).show();
                     String token= userLoginResponse.getData();
                     Toast.makeText(LoginActivity.this,token,Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(LoginActivity.this, TrangChuActivity.class);
-                    Bundle bundle=new Bundle();
-                    bundle.putSerializable("response",userLoginResponse);
-                    intent.putExtras(bundle);
+                    Intent intent=new Intent(LoginActivity.this, HangHoaActivity.class);
+//                    Bundle bundle=new Bundle();
+//                    bundle.putSerializable("response",userLoginResponse);
+//                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }

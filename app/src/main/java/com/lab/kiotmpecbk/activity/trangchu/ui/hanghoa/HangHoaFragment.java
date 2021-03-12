@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
 import com.lab.kiotmpecbk.R;
+import com.lab.kiotmpecbk.activity.trangchu.ui.hanghoa.banhang.ViewPagerAdapter;
 import com.lab.kiotmpecbk.activity.trangchu.ui.tongquan.TongQuanViewModel;
 
 public class HangHoaFragment extends Fragment {
@@ -22,10 +24,14 @@ public class HangHoaFragment extends Fragment {
     private HangHoaViewModel hangHoaViewModel;
 
     private AHBottomNavigation ahBottomNavigation;
-
     private AHBottomNavigationViewPager ahBottomNavigationViewPager;
+    private ViewPagerAdapter adapter;
 
-    private ViewPagerAdapter viewPagerAdapter;
+    private View viewEndAnimation;
+    private ImageView viewAnimation;
+
+    private int mCountProduct;
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -33,13 +39,11 @@ public class HangHoaFragment extends Fragment {
         hangHoaViewModel =
                 ViewModelProviders.of(this).get(HangHoaViewModel.class);
         View root = inflater.inflate(R.layout.fragment_hanghoa, container, false);
-        final TextView textView = root.findViewById(R.id.text_hanghoa);
-        hangHoaViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
+
+
+
+
 }

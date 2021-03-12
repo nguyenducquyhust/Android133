@@ -19,7 +19,7 @@ public interface LoginApiService {
             .create();
 
     LoginApiService apiService = new Retrofit.Builder()
-            .baseUrl("http://lab.kiotmpecbk.cloud:8080/")
+            .baseUrl("https://www.kiotmpec.xyz/")
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(LoginApiService.class);
 

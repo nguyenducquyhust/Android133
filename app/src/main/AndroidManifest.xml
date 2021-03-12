@@ -16,6 +16,7 @@
             android:label="@string/title_activity_trang_chu"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".activity.trangchu.ui.hanghoa.banhang.HangHoaActivity" />
         <activity android:name=".activity.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

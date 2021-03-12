@@ -40,9 +40,10 @@ public class TrangChuActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_tong_quan, R.id.nav_hang_hoa, R.id.nav_slideshow)
-                .setDrawerLayout(drawer)
+                R.id.nav_tong_quan, R.id.nav_hang_hoa, R.id.nav_kiem_kho)
+                .setOpenableLayout(drawer)
                 .build();
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
